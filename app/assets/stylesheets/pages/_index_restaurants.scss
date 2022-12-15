@@ -1,0 +1,47 @@
+.parent-h1-restaurants{
+  display: flex;
+  justify-content: center;
+}
+
+.your-restaurants{
+  margin: 20px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 50;
+  color: gray;
+}
+
+.parent-restaurant-and-photos{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.parent-info-and-photo{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: 15px
+}
+
+.photo-index{
+  width: 275px;
+  height: 275px;
+  border-radius: 8px;
+}
+
+.info-restaurant{
+  padding: 10px;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.link-index{
+  text-decoration: none;
+  color: gray;
+}
+
+.link-index:hover{
+  color: gray;
+}

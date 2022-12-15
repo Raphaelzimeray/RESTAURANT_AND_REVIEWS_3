@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="parent-h1-restaurants">
+    <h1 class="your-restaurants"> Vos restaurants</h1>
+  </div>
+
+  <div class="parent-restaurant-and-photos">
+    <% @restaurants.each do |restaurant|%>
+      <%= link_to restaurant_path(restaurant), class:"link-index" do%>
+        <div class="parent-info-and-photo">
+          <div class="info-restaurant">
+            <p> <%= restaurant.name %></p>
+            <p> <%= restaurant.address %></p>
+          </div>
+          <div class="photo-restaurant">
+            <%= cl_image_tag restaurant.photo.key, class:"photo-index" %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
