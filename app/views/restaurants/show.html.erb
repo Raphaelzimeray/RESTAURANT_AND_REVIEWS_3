@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="h1-parent-show-restaurant">
+    <h1 class="your-restaurant"> Votre restaurant</h1>
+  </div>
+
+  <div class="parent-show-restaurant">
+    <div class="show-of-restaurant-boxes">
+      <ul class="ul-show-restaurant">
+        <li> Nom du restaurant: <%= @restaurant.name %></li>
+        <li> Addresse du restaurant: <%= @restaurant.address %></li>
+      </ul>
+      <div class="photo-show-restaurant">
+        <%= cl_image_tag @restaurant.photo.key, class:"show-photo" %>
+      </div>
+    </div>
+  </div>
+  <div class="parent-go-back-on-index">
+    
+  </div>
+</div>

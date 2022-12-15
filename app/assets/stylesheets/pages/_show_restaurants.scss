@@ -1,0 +1,38 @@
+.h1-parent-show-restaurant{
+  display: flex;
+  justify-content: center;
+}
+
+.your-restaurant{
+  font-size: 50;
+  font-weight: bold;
+  margin: 30px;
+  padding: 20px;
+  color: gray;
+}
+
+
+.show-photo{
+  width: 275px;
+  height: 275px;
+  border-radius: 8px;
+  margin-left: 15px;
+}
+
+.ul-show-restaurant{
+  display: grid;
+  grid-gap: 20px;
+}
+
+.show-of-restaurant-boxes{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.parent-show-restaurant{
+  display: flex;
+  justify-content: center;
+}
