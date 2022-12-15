@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+require "open-uri"
 
 Restaurant.destroy_all
 
@@ -18,6 +18,9 @@ mcdo = Restaurant.new(
   address: "7 rue Beaujon, 75008, Paris"
 )
 
+file = URI.open("https://live.staticflickr.com/6051/6259056571_4abd429fca_b.jpg")
+mcdo.photo.attach(io: file, filename: "mcdo.jpg", content_type: "mcdo/jpg")
+
 mcdo.save!
 
 puts "#{mcdo.name} has been created!"
@@ -26,6 +29,8 @@ grandvefour = Restaurant.new(
   name: "Le grand véfour",
   address: "17 Rue de Beaujolais, 75001 Paris"
 )
+file = URI.open("https://monparisjoli.com/wp-content/uploads/2016/01/328784_327820443908674_520713873_o-1024x681.jpg")
+grandvefour.photo.attach(io: file, filename: "grvefour.jpg", content_type: "grvefour/jpg")
 
 grandvefour.save!
 
@@ -35,9 +40,9 @@ hippopotamus = Restaurant.new(
   name: "Hipopotamus Steakhouse",
   address: "46 Av. de Wagram, 75008 Paris"
 )
+file = URI.open("https://d1ralsognjng37.cloudfront.net/d2ac752e-9928-48c7-8df5-e5c0cc09674d.jpeg")
+hippopotamus.photo.attach(io: file, filename: "hippopotamus.jpeg", content_type: "hippopotamus/jpeg")
 
 hippopotamus.save!
 
 puts "#{hippopotamus.name} has been created!"
-
-
