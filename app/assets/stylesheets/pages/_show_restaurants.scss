@@ -45,3 +45,61 @@
 .back-on-index{
   margin-top: 30px;
 }
+
+.h3-parent-review-show-restaurant{
+  display: flex;
+  justify-content: center;
+}
+
+.h3-review-show-restaurant{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 50;
+}
+
+.ratings-show-restaurant-parent{
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid gray;
+  width: 55%;
+  padding: 20px;
+  margin-bottom: 100px;
+  p{
+    text-align: center;
+  }
+}
+
+.parent-star-png-review{
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  .star-png{
+    margin: 5px;
+  }
+}
+
+.etoile-png{
+  width: 20px;
+  height: 20px;
+}
+
+.comment-review-show-restaurant{
+  p{
+    margin-bottom: 0px!important;
+  }
+}
+
+.write-a-review-restaurant{
+  display: flex;
+  justify-content: center;
+}
+
+.write-a-review{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
