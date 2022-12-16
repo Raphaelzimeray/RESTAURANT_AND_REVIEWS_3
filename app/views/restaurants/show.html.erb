@@ -18,5 +18,25 @@
     <div class="back-on-index">
      <p> Retourner sur la page d'acceuil <%= link_to "Restaurants", restaurants_path, class:'btn btn-dark' %></p>
     </div>
+  </div class="write-a-review-restaurant">
+    <div class="write-a-review">
+      <p> Notez ce restauant <%= link_to "Evaluez", new_restaurant_review_path(@restaurant), class: 'btn btn-dark' %></p>
+    </div>
+  <div>
+  </div>
+  <div class="h3-parent-review-show-restaurant">
+    <h3 class="h3-review-show-restaurant"> Evaluations du restaurant par les utilisateurs </h3>
+  </div>
+  <div class="ratings-show-restaurant-parent">
+    <% @restaurant.reviews.each do |review| %>
+    <div class="parent-star-png-review">
+      <% review.rating.to_i.times do %>
+        <%= image_tag "etoile.png", class:"etoile-png" %>
+      <% end %>
+    </div>
+      <div class="comment-review-show-restaurant">
+        <p> Avis: "<%= review.comment %>"</p>
+      </div>
+    <% end %>
   </div>
 </div>

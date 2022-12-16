@@ -2,4 +2,13 @@
   <div class="h1-new-review">
     <h1 class="new-review"> Nouvelle note </h1>
   </div>
+  <div class="new-review-form-parent">
+    <div class="form-parent">
+      <%= simple_form_for([@restaurant, @review]) do |f| %>
+      <%= f.input :rating, collection: Review::NUMBER_RATING %>
+      <%= f.input :comment, placeholder: "Ecrivez votre commentaire ici..." %>
+      <%= f.submit "Notez", class: "btn btn-dark" %>
+      <% end %>
+    </div>
+  </div>
 </div>

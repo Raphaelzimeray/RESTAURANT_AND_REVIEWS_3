@@ -8,6 +8,11 @@
 
 require "open-uri"
 
+puts "cleaning database..."
+
+
+Review.destroy_all
+
 Restaurant.destroy_all
 
 puts "Creating 5 restaurants..."
