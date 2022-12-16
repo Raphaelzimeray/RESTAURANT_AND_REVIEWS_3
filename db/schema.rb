@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2022_12_15_150756) do
 
-ActiveRecord::Schema.define(version: 2022_12_15_131538) do
 
 
   # These are extensions that must be enabled in order to support this database
